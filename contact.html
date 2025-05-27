@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="images/brooke-lark-jUPOXXRNdcA-unsplash.jpg"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <nav id="main-header">
+      <div class="heading">Virtual Kitchen</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Contact us</h1>
+      <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Aston Email:</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="j.doe@aston.ac.uk"
+        />
+        <span id="email-error" style="color: red"></span>
+        <label for="email-confirm">Confirm Email:</label>
+        <input type="email" id="email-confirm" required />
+
+        <label for="email">Phone number:</label>
+        <input type="number" id="phone-number" />
+        <span id="phone-error" style="color: red"></span>
+        <label for="email">Contact option:</label>
+        <div style="display: flex; margin: 10px 0px; gap: 10px">
+          <input type="radio" value="phone" />Phone
+          <input type="radio" value="phone" />Email
+        </div>
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" required />
+        <span id="date-error" style="color: red"></span>
+        <button type="submit">Book Lesson</button>
+      </form>
+    </main>
+
+    <footer style="display: flex; gap: 20px">
+      <p>© 2025 Virtual Kitchen</p>
+      <a href="mailto:info@virtuallkitchen.com"> Email Us </a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
